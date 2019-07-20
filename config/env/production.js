@@ -297,9 +297,9 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     onlyAllowOrigins: [
-      'http://localhost:1337',
-      'http://localhost',
-      'http://bookmytic.tk',
+      //   'http://localhost:1337',
+      //   'http://localhost',
+      //   'http://bookmytic.tk',
     ],
 
 
@@ -467,7 +467,7 @@ module.exports = {
    *                                                                         *
    ***************************************************************************/
   custom: {
-    baseUrl: 'http://bookmytic.tk',
+    baseUrl: 'http://localhost:1337',
     internalEmailAddress: 'support@example.com',
 
     // mailgunDomain: 'mg.example.com',
