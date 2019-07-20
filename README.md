@@ -1,4 +1,4 @@
-# design-pro-1
+# ticket-booking-app
 
 a [Sails v1](https://sailsjs.com) application
 
