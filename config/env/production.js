@@ -19,6 +19,9 @@
  * https://sailsjs.com/docs/concepts/deployment
  */
 
+var session = require('express-session');
+var MySQLSessionStore = require('express-mysql-session')(session);
+
 var sessionOptions = {
   name: 'test',
 
