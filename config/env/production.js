@@ -371,7 +371,7 @@ module.exports = {
    *                                                                         *
    ***************************************************************************/
   custom: {
-    baseUrl: 'http://3.14.148.87:1337',
+    baseUrl: 'http://bookmytic.tk',
     internalEmailAddress: 'support@example.com',
 
     // mailgunDomain: 'mg.example.com',
