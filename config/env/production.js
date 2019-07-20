@@ -99,21 +99,19 @@ module.exports = {
        ****************************************************************************/
       // ssl: true,
 
-      default: {
-        user: sessionOptions.user,
-        password: sessionOptions.password,
-        database: sessionOptions.database,
+      user: sessionOptions.user,
+      password: sessionOptions.password,
+      database: sessionOptions.database,
+      dialect: 'mysql',
+      options: {
         dialect: 'mysql',
-        options: {
-          dialect: 'mysql',
-          host: sessionOptions.host,
-          port: sessionOptions.port,
-          logging: true,
-          pool: {
-            max: 5,
-            min: 0,
-            idle: 10000
-          }
+        host: sessionOptions.host,
+        port: sessionOptions.port,
+        logging: true,
+        pool: {
+          max: 5,
+          min: 0,
+          idle: 10000
         }
       }
 
