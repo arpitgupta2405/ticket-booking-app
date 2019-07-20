@@ -108,7 +108,12 @@ module.exports = {
           dialect: 'mysql',
           host: sessionOptions.host,
           port: sessionOptions.port,
-          logging: true
+          logging: true,
+          pool: {
+            max: 5,
+            min: 0,
+            idle: 10000
+          }
         }
       }
 
