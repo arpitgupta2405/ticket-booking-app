@@ -351,3 +351,13 @@ function confirmBooking(elemet) {
       return;
     });
 }
+
+function gotoSignUp(element) {
+  $('#signIn').hide();
+  $('#signUp').show();
+}
+
+function gotoSignIn(element) {
+  $('#signUp').hide();
+  $('#signIn').show();
+}
