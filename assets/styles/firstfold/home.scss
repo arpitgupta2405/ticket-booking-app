@@ -1,0 +1,21 @@
+/*
+	New templates Sass Theme
+	Author: vinay kumar
+	version: 0.0.2
+*/
+/* BASE */
+
+
+@import "../styleguide/base/_variables.scss";
+@import "../styleguide/base/_mixins.scss";
+@import "../styleguide/base/_normalize.scss";
+@import "../styleguide/base/_base.scss";
+@import "../styleguide/modules/_helper.scss";
+
+/* modules */
+
+@import "../styleguide/layouts/_header.scss";
+@import "../styleguide/layouts/_banner.scss";
+@import "../styleguide/layouts/_home.scss";
+@import "../styleguide/layouts/_inner-f.scss";
+@import "../styleguide/layouts/_payment.scss";

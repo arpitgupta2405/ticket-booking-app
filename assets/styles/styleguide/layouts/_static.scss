@@ -1,0 +1,478 @@
+.static-title {
+  font-size: 22px;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 17px;
+}
+
+.static-content {
+  margin-bottom: 15px;
+
+  .static-heading {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 13px;
+    color: #000;
+  }
+
+  .static-para {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 37px;
+  }
+}
+
+
+.about-us-sec {
+  width: 100%;
+  background: #fff url('https://images.designpros.com/images/aboutus-banner.png') 140% 34px no-repeat;
+
+  .aboutus-banner {
+    width: 100%;
+    padding: 142px 0 0px;
+
+    .banner-content {
+      width: 520px;
+      padding-bottom: 165px;
+
+      .banner-title {
+        font-size: 40px;
+        color: #000000;
+        line-height: 1;
+        margin-bottom: 14px;
+      }
+
+      .banner-tagline {
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 19px;
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 28px;
+        display: block;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .our-mission {
+    background: #fff;
+  }
+
+  .customer-stories.static-customer-stories {
+    padding: 37px 0 74px;
+  }
+
+}
+
+.faq-section {
+  width: 100%;
+  background: #fff;
+  padding: 47px 0 0;
+  // .support-banner{
+  //   width: 100%;  height: 153px;background:#00bd6a;@include flexbox();align-items:center;justify-content:center;
+
+
+  // }
+  h1 {
+    font-size: 40px;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 11px;
+  }
+
+  .faq-content {
+    width: 100%;
+    padding: 24px 0 0px;
+    @include flexbox();
+
+
+
+    .sidebar {
+      width: 250px;
+
+      aside {
+        max-width: 200px;
+        background: #f5f5f5;
+        border-radius: 7px;
+        padding: 20px;
+        min-height: 350px;
+
+        ul {
+          li {
+            a {
+              font-size: 18px;
+              line-height: 40px;
+              color: #000;
+              border-bottom: 1px solid transparent;
+
+              &.active {
+                border-bottom: 1px solid #000;
+              }
+
+              &:hover {
+                border-bottom: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .faq-inner-content {
+      width: calc(100% - 250px);
+
+      h4 {
+        font-size: 21px;
+        line-height: 1.2;
+        color: #000;
+        margin-bottom: 19px;
+      }
+
+      .contact-sec {
+        max-width: 830px;
+
+        ul {
+          width: 100%;
+          @include flexbox();
+          flex-wrap: wrap;
+
+          li {
+            width: 46.7%;
+            margin-bottom: 30px;
+
+            &:first-child {
+              margin-right: 50px;
+            }
+
+            input {
+              width: 100%;
+              border: 2px solid #ececec;
+              border-radius: 8px;
+              height: 44px;
+              padding-left: 20px;
+
+              +span.error-msg {
+                color: red;
+              }
+            }
+
+            &:last-child {
+              input {
+                float: right;
+              }
+            }
+
+            input::-webkit-input-placeholder {
+              font-size: 16px;
+              color: #000;
+              letter-spacing: 0.2px;
+              font-weight: 400;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        textarea {
+          width: 100%;
+          height: 144px;
+          border: 2px solid #ececec;
+          border-radius: 8px;
+          padding: 15px 0 0 20px;
+          font-size: 16px;
+          color: #000;
+          letter-spacing: 0.2px;
+          font-weight: 400;
+          margin-bottom: 26px;
+
+          &.invalid {
+            margin: 0;
+
+            +span {
+              margin-bottom: 16px;
+              color: red;
+            }
+          }
+
+          &::-webkit-input-placeholder {
+            opacity: 0.5;
+          }
+
+        }
+
+
+      }
+
+      .contact-us-success {
+        // width:0;transition:all .3s;opacity: 0;visibility: hidden;
+
+        // &.active{width: auto;opacity: 1;visibility: visible;display: block;}
+
+        .model-success {
+          margin-top: 10px;
+
+          h2 {
+            color: #fff;
+            width: auto;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, .7);
+          }
+        }
+      }
+
+      .send-msg-btn {
+        font-weight: 600;
+        min-width: 252px;
+        padding: 13px 60px 11px;
+        margin-bottom: 19px;
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 600;
+      }
+
+      .email-us {
+        padding-top: 36px;
+        border-top: 1px solid #cccccc;
+        margin-top: 40px;
+
+        h4 {
+          font-size: 20px;
+          line-height: 1.2;
+          color: #000;
+          margin-bottom: 17px
+        }
+
+        ul {
+          @include flexbox();
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          li {
+            width: 50%;
+            @include flexbox;
+            align-items: center;
+
+            i {
+              font-size: 20px;
+              line-height: 1;
+              color: #00bd6a;
+              margin-right: 8px;
+            }
+
+            span {
+              font-size: 15px;
+              line-height: 28px;
+              color: #000;
+              display: inline-block;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .content-sec {
+        h3 {
+          line-height: 1;
+          margin-bottom: 11px;
+        }
+
+        h4 {
+          margin-bottom: 9px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+          margin-bottom: 44px;
+        }
+
+        margin-top:29px;
+        padding-top: 45px;
+      }
+    }
+  }
+}
+
+
+@media only screen and(max-width:1500px) {
+  .about-us-sec {
+    background-position: 95% 34px;
+  }
+}
+
+@media only screen and(max-width:1024px) {
+  .about-us-sec .aboutus-banner {
+    background-position: 100% 34px;
+  }
+
+  .faq-section h1 {
+    font-size: 32px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .contact-sec ul li {
+    width: 46.5%;
+  }
+
+  .about-us-sec .aboutus-banner .banner-content .banner-title {
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and(max-width:814px) {
+  .about-us-sec .aboutus-banner {
+    background: #fff;
+    padding: 80px 0 0;
+  }
+
+  .faq-section .faq-content .faq-inner-content .contact-sec ul li {
+    width: 47%;
+  }
+
+  .about-us-sec .aboutus-banner .banner-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .about-us-sec .our-mission {
+    padding-top: 60px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .contact-sec ul li:first-child {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and(max-width:640px) {
+  .about-us-sec .aboutus-banner .banner-content {
+    width: 100%;
+  }
+
+  .about-us-sec .aboutus-banner {
+    padding: 60px 0 0;
+  }
+
+  .static-content .static-heading {
+    line-height: 26px;
+  }
+
+  .about-us-sec .customer-stories.static-customer-stories {
+    padding: 0;
+  }
+
+  .about-us-sec .aboutus-banner .banner-content .banner-title {
+    font-size: 28px;
+  }
+
+  .about-us-sec .aboutus-banner .banner-content .banner-tagline {
+    font-size: 16px;
+  }
+
+  .about-us-sec .aboutus-banner .banner-content span {
+    font-size: 16px;
+  }
+
+  .faq-section .faq-content .sidebar {
+    display: none;
+  }
+
+  .faq-section .faq-content .faq-inner-content {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .faq-inner-content .content-sec {
+    margin-top: 40px;
+  }
+
+  .faq-section .faq-content {
+    padding: 24px 0 44px;
+  }
+
+  .faq-section .support-banner {
+    height: 100px;
+  }
+
+  .faq-section .support-banner h1 {
+    font-size: 30px;
+  }
+
+  .about-us-sec .our-mission {
+    padding-top: 40px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .content-sec {
+    margin-top: 0;
+  }
+
+  .faq-section h1 {
+    font-size: 26px;
+  }
+
+  .faq-section .faq-content .faq-inner-content h4 {
+    font-size: 18px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .content-sec h3 {
+    font-size: 26px;
+    margin-bottom: 21px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .email-us {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and(max-width:480px) {
+
+  .faq-section .faq-content .faq-inner-content .contact-sec ul li {
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .faq-section .faq-content .faq-inner-content .send-msg-btn {
+    min-width: 100%;
+  }
+
+  .faq-section .faq-content .faq-inner-content .email-us {
+    max-width: 100%;
+  }
+
+  .faq-section .faq-content .faq-inner-content .email-us ul li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .content-sec {
+    margin-top: 0px;
+  }
+
+  .faq-section .faq-content .faq-inner-content h4 {
+    line-height: 28px;
+  }
+
+  .faq-section .faq-content .faq-inner-content .content-sec h4 {
+    margin-bottom: 15px;
+  }
+
+  .faq-section .support-banner h1 {
+    font-size: 26px;
+  }
+}

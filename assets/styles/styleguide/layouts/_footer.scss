@@ -1,0 +1,74 @@
+footer{padding: 45px 0;background: #fff;border-top: 1px solid #ccc;
+    width: 100%;
+    &.bg-light{border-top:1px solid #ccc;}
+    .container{
+        >ul{@include flexbox();flex-wrap:wrap;
+            li.footer-links{width: 25%;
+                &.footer-logo-sec{@include flexbox();flex-direction: column;
+                    width: 390px;
+                    span{
+                        width:180px;font-size: 16px;line-height: 24px;color: #000000;}
+
+                    div.copy-rights{padding-top: 27px;
+                        span{font-size: 14px;}
+                    }
+
+                    span.footer-logo{
+                        margin-top:6px;display: block;margin-bottom: 15px;
+
+                        img{max-width: 100%;display: block;}
+                    }
+                        
+                }
+                h4{font-size: 16px;line-height: 24px;color: #000000;margin-bottom: 5px;}
+
+                ul.footer-inner-links{
+                    li{
+                        a{font-size: 14px;line-height: 30px;color: #000000;
+                            &:hover{color: $mcolor;text-decoration: underline;}
+                        }
+                    }
+                }
+            }
+        }
+    }   
+   
+}
+
+@media only screen and(max-width:814px){
+    
+    footer .container > ul li.footer-links.footer-logo-sec{width: 25%;}
+    footer .container > ul li.footer-links.footer-logo-sec span.footer-logo{margin-top: 0;}
+}
+
+
+@media only screen and(max-width:640px){
+    footer .container > ul li.footer-links {
+        width: 100%;
+        ul{display: none;}
+    }
+
+    footer .container > ul li.footer-links.footer-logo-sec{
+        order: 4;margin: 0;padding-top: 10px;
+    }
+
+    footer .container > ul li.footer-links.footer-logo-sec div.copy-rights {
+        padding-top: 0px;
+    }
+
+    footer .container > ul li.footer-links.footer-logo-sec>span{display: none;}
+    footer .container > ul li.footer-links{margin-bottom: 15px;border-bottom: solid 1px #e8e8e8;transition: all .3s;}
+    footer .container > ul li.footer-links:first-child{border: 0;}
+    footer .container > ul li.footer-links h4{margin:0;padding-bottom: 15px;
+        @include flexbox();justify-content: space-between;align-items: center;
+    }
+
+    footer .container > ul li.footer-links.active ul{
+     padding-bottom: 15px;
+    }
+
+    footer .container > ul li.footer-links.active h4 i{
+        transform: rotate(180deg);
+    }
+    
+}

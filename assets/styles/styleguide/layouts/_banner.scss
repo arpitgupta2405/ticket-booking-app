@@ -1,0 +1,161 @@
+.banner{
+    width: 100%;background:#fff url('https://images.designpros.com/images/home-banner.png') 90% -65px no-repeat;padding:142px 0 134px;
+    .banner-content{width: 500px;
+        .banner-title{font-size: 40px;color: #040d14;margin-bottom: 24px;padding-right:100px;line-height: 47px;}
+        .banner-tagline{font-size: 22px;color: #000000;margin-bottom: 28px;}
+        .banner-btn{padding: 16px 52px 14px;font-size:15px;}
+    }
+
+    &.resume-banner{
+        background:#fff url('https://images.designpros.com/images/resume-banner-img.png') 90% 66px no-repeat;padding: 123px 0 50px;
+
+        .banner-content{
+            .banner-tagline{margin-bottom: 19px;}
+
+            .banner-btn {
+                padding: 16px 61px 14px;margin-bottom: 220px;
+            }
+
+            .file-formats{
+                span{display: block;margin-bottom: 14px;font-size: 16px;color: #000000;}
+                ul{@include flexbox();align-items:center;
+                    li{
+                        margin-right: 19px;height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.trusted-companies{
+    width:100%;padding:44px 0 24px;
+    h4{font-size:22px;margin-bottom: 10px;}
+
+    .img-sec{
+        ul{@include flexbox();flex-wrap:wrap;justify-content:space-between;align-items:center;
+            li{
+                width:185px;margin-bottom:7px;
+                img{max-width: 100%;}
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .banner{
+        background-position:110% -65px;
+    }
+
+    .banner.resume-banner{
+        background-position:100% 66px;
+    }
+}
+
+
+@media only screen and(max-width:1024px){
+    .banner {padding:116px 0 122px;
+        background-position: 215% -65px;
+        .banner-content {
+            width: 375px;
+            .banner-title {
+                font-size: 42px;
+            }
+
+            .banner-tagline {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .trusted-companies .img-sec ul li {
+        width: 25%;
+    }
+
+    .banner.resume-banner .banner-content .banner-title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width:815px){
+    .banner{padding: 68px 0 74px;
+        background: #fff;
+
+        .banner-content{width: 100%;
+            .banner-title{font-size: 38px;}
+        }
+    }
+
+    .banner.resume-banner {
+       background: #fff;padding: 68px 0 74px;
+    }
+
+    .banner.resume-banner .banner-content .banner-btn{
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and(max-width:640px){
+
+    .trusted-companies .img-sec ul li{
+        width: 33.3%;
+    }
+
+    .banner{
+        .banner-content{
+
+            .banner-title{font-size: 34px;}
+        }
+    }
+
+    .banner.resume-banner .banner-content .banner-title {
+        font-size: 34px;
+    }
+
+}
+
+@media only screen and(max-width:480px){
+
+    .banner .banner-content .banner-title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .trusted-companies h4{
+        line-height: 26px;
+    }
+
+    .banner .banner-content .banner-btn {
+        padding: 11px 35px;
+        font-weight: normal;
+    }
+
+    .banner.resume-banner .banner-content .banner-title {
+        font-size: 28px;
+    }
+
+    .banner.resume-banner .banner-content .file-formats ul{
+        flex-wrap: wrap;
+        li{
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+
+
+@media only screen and(max-width:360px){
+
+.banner .banner-content .banner-title {
+    font-size: 27px;
+}
+.banner .banner-content .banner-tagline {
+    font-size: 16px;
+}
+
+}
+
+  
